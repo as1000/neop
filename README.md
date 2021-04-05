@@ -3,11 +3,9 @@
 
 ### Installation
 
-You can install the package using pip.
-
 `pip install neop`
 
-Once this package is installed, you are ready to begin predictions.
+You can install the package using pip. Once this package is installed, you are ready to begin predictions.
 
 ### Getting Amino Acid Context for Variants in a MAF
 
