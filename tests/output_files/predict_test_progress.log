@@ -1,0 +1,11 @@
+The following samples were removed due to allele invalidity: TCGA-05-4415-01	TCGA-05-4395-01	
+Starting prediction for variant: 1 of 8
+Starting prediction for variant: 2 of 8
+Starting prediction for variant: 3 of 8
+Barcode not in list of patient alleles or removed due to invalidity of alleles: TCGA-05-4415-01; Skipped predictions on the variant above.
+Starting prediction for variant: 4 of 8
+Starting prediction for variant: 5 of 8
+Starting prediction for variant: 6 of 8
+Starting prediction for variant: 7 of 8
+Starting prediction for variant: 8 of 8
+Success!
