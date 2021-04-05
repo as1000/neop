@@ -7,7 +7,7 @@ setuptools.setup(
     name="neop",
     version="0.1.0",
     author="Ananthan Sadagopan",
-    author_email="ananthan.sadagopan@gmail.com",
+    author_email="ananthans1000@gmail.com",
     description="Python Package for Predicting Neoantigens and Obtaining Amino Acid Context from MAFs",
     long_description=long_description,
     long_description_content_type="text/markdown",
