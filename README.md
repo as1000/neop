@@ -9,9 +9,9 @@ Once this package is installed, you are ready to begin predicitions.
 
 In Python, use the following command to obtain the amino acid context for each variant and its corresponding reference allele in a MAF file (i.e. the sequence of amino acids between "Start_Position"-10 and "End_Position"+10 for in-frame mutations, and the sequence of amino acids between "Start_Position"-10 and the new stop codon for frame-shift mutations):
 
-`from neop.main import annotate_maf
+`from neop.main import annotate_maf`
 
-output_maf = annotate_maf(path_to_MAF_file, path_to_output_folder, PREFIX)`
+`output_maf = annotate_maf(path_to_MAF_file, path_to_output_folder, PREFIX)`
 
 `path_to_MAF_file` is the full path of the MAF file to be annotated. Note: Tumor_Seq_Allele2 is considered as the alt allele. Tumor_Seq_Allele1 is ignored. Variants in the MAF must have values for the following fields: Hugo_Symbol, Chromosome, Start_Position, End_Position, Reference_Allele, Tumor_Seq_Allele2, Variant_Classification, Tumor_Sample_Barcode, HGVSp_Short. Consider using GenomeNexus: https://github.com/genome-nexus/genome-nexus-annotation-pipeline to annotate an incomplete MAF file.
 
