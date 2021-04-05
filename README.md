@@ -3,9 +3,9 @@
 
 ### Installation
 
-You can install the package using pip. Download this repo, navigate to the root directory (containing setup.py) and enter the following command:
+You can install the package using pip.
 
-`pip install .`
+`pip install neop`
 
 Once this package is installed, you are ready to begin predictions.
 
