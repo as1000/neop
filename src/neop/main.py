@@ -182,7 +182,8 @@ def output_result(predictor, affinity_cutoff, final_json_list, patient_alleles_d
                     affinity_PHBR_denom = affinity_PHBR_denom + 1/float(t_affinity_sort_affinity_percentile_list[a])
                 else:
                     affinity_PHBR_denom = affinity_PHBR_denom + 10000
-                    f.write("WARNING: Affinity Percentile is 0 for the following variant; 0.00001 was used during HBR calculations:\t" + str(current_barcode) + "\t" + str(current_Hugo_Symbol) + "\t" + str(start) + "\t" + str(end) + "\t" + str(ref) + "\t" + str(ta1) + "\t" + str(ta2) + "\t" + str(current_transcript_tested) + "\t\n")
+                    with open(log_file_input, "a+") as f:
+                        f.write("WARNING: Affinity Percentile is 0 for the following variant; 0.00001 was used during HBR calculations:\t" + str(current_barcode) + "\t" + str(current_Hugo_Symbol) + "\t" + str(start) + "\t" + str(end) + "\t" + str(ref) + "\t" + str(ta1) + "\t" + str(ta2) + "\t" + str(current_transcript_tested) + "\t\n")
             else:
                 affinity_PHBR_denom = affinity_PHBR_denom + 1/100
             a=a+1
@@ -214,12 +215,12 @@ def output_result(predictor, affinity_cutoff, final_json_list, patient_alleles_d
         master_df = pd.concat([master_df, temp_df], ignore_index=True, sort=False)
         
     elif (current_wt_context != None and current_mutated_context != None) and (any(element in current_mutated_context for element in invalid_chars) or any(element in current_wt_context for element in invalid_chars)):
-        
-        f.write("WARNING: Unconventional Amino Acid Present for Transcript Variant (Skipped):\t" + str(current_barcode) + "\t" + str(current_Hugo_Symbol) + "\t" + str(start) + "\t" + str(end) + "\t" + str(ref) + "\t" + str(ta1) + "\t" + str(ta2) + "\t" + str(current_transcript_tested) + "\t\n")
+        with open(log_file_input, "a+") as f:
+            f.write("WARNING: Unconventional Amino Acid Present for Transcript Variant (Skipped):\t" + str(current_barcode) + "\t" + str(current_Hugo_Symbol) + "\t" + str(start) + "\t" + str(end) + "\t" + str(ref) + "\t" + str(ta1) + "\t" + str(ta2) + "\t" + str(current_transcript_tested) + "\t\n")
     
     else:
-        
-        f.write("WARNING: No Amino Acid Context Obtained for Transcript Variant (Skipped):\t" + str(current_barcode) + "\t" + str(current_Hugo_Symbol) + "\t" + str(start) + "\t" + str(end) + "\t" + str(ref) + "\t" + str(ta1) + "\t" + str(ta2) + "\t" + str(current_transcript_tested) + "\t\n")
+        with open(log_file_input, "a+") as f:
+            f.write("WARNING: No Amino Acid Context Obtained for Transcript Variant (Skipped):\t" + str(current_barcode) + "\t" + str(current_Hugo_Symbol) + "\t" + str(start) + "\t" + str(end) + "\t" + str(ref) + "\t" + str(ta1) + "\t" + str(ta2) + "\t" + str(current_transcript_tested) + "\t\n")
         
     return master_df, final_json_list
 
