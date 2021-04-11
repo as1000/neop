@@ -2,4 +2,3 @@ varcode>=1.0.3
 pyensembl>=1.9.1
 mhcflurry>=2.0.1
 pandas>=1.2.1
-tensorflow
