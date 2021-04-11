@@ -44,4 +44,3 @@ jobs:
       run: |
         cd tests      
         pytest -vs annotate_maf_test.py
-        pytest -vs predict_test.py
