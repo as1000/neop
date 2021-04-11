@@ -32,6 +32,7 @@ jobs:
         pyensembl install --release 75 76
         python -m pip install mhcflurry
         mhcflurry-downloads fetch
+        mhcflurry-downloads fetch models_class1_presentation
         python -m pip install .
     - name: Lint with flake8
       run: |
