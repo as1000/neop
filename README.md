@@ -7,9 +7,10 @@
 
 You can install the package using pip. Before beginning predictions you must run the following two commands to retrieve the data necessary for the package dependencies to function properly.
 
-`pyensembl install --release 75 76`
-
-`mhcflurry-downloads fetch`
+```
+pyensembl install --release 75 76`
+mhcflurry-downloads fetch
+```
 
 ### Getting Amino Acid Context for Variants in a MAF
 
