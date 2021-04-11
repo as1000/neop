@@ -20,6 +20,12 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    install_requires=[    
+    'varcode>=1.0.3',
+    'pyensembl>=1.9.1',
+    'mhcflurry>=2.0.1',
+    'pandas>=1.2.1',
+    ],
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     py_modules=['main'],
