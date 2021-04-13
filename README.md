@@ -8,7 +8,7 @@
 You can install the package using pip. Before beginning predictions you must run the following two commands to retrieve the data necessary for the package dependencies to function properly.
 
 ```
-pyensembl install --release 75 76`
+pyensembl install --release 75 76
 mhcflurry-downloads fetch
 ```
 
