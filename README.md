@@ -5,17 +5,17 @@
 
 You can install either the last stable version or current version of neop using pip.
 
-###### Stable version:
+#### Stable version:
 
 `pip install neop`
 
-###### Current version:
+#### Current version:
 
 Download this directory. Navigate to it and run the following command:
 
 `pip install .`
 
-###### Regardless of which version you install:
+#### Regardless of which version you install:
 
 Before beginning predictions, you must run the following two commands to retrieve the data necessary for the package dependencies to function properly.
 
