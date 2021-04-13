@@ -3,9 +3,19 @@
 
 ### Installation
 
+You can install either the last stable version or current version of neop using pip.
+
+Stable version:
+
 `pip install neop`
 
-You can install the package using pip. Before beginning predictions you must run the following two commands to retrieve the data necessary for the package dependencies to function properly.
+Current version:
+
+Download this directory. Navigate to it and run the following command:
+
+`pip install .`
+
+Regardless of which version you install, before beginning predictions, you must run the following two commands to retrieve the data necessary for the package dependencies to function properly.
 
 ```
 pyensembl install --release 75 76
